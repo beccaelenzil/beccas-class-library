@@ -8,4 +8,13 @@ class BooksController < ApplicationController
   def index
     @books = BOOKS
   end
+
+  def show
+    book_id = params[:id]
+    @book = BOOKS[book_id.to_i]
+    if @book.nil?
+      head :not_found
+      return
+    end
+  end
 end
