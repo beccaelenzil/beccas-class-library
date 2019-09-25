@@ -1,9 +1,11 @@
 require "test_helper"
 
 describe BooksController do
-  it "should get index" do
-    get "/books"
-    must_respond_with :success
+  describe "index" do
+    it "should get index" do
+      get "/books"
+      must_respond_with :success
+    end
   end
 
   describe "show" do
@@ -29,4 +31,6 @@ describe BooksController do
       must_respond_with :not_found
     end
   end
+
+  
 end
