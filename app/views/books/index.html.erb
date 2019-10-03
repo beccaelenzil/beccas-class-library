@@ -3,6 +3,7 @@
   <% @books.each do |book|  %>
     <li>
       <%= link_to book.title, book_path(book) %> By: <%= book.author %>
+      <%= link_to "delete", book_path(book), method: :delete %>
     </li>
   <% end %>
 </ul> 
