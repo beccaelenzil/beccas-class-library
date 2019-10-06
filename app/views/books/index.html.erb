@@ -1,8 +1,14 @@
+<h1>Tools</h1>
+<ul>
+  <li><%= link_to "Add A Book", new_book_path %></li>
+</ul>
+
 <h1>Books</h1>
 <ul>
   <% @books.each do |book|  %>
     <li>
       <%= link_to book.title, book_path(book) %> By: <%= book.author %>
+      <%= link_to "edit", edit_book_path(book)%>
       <%= link_to "delete", book_path(book), method: :delete %>
     </li>
   <% end %>

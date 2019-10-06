@@ -8,8 +8,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>Becca's Books!</header>
   <body>
     <%= yield %>
   </body>
+  <footer>
+    Copyright Becca 2019 <%= link_to "HOME", books_path %> 
+  <footer>
 </html>

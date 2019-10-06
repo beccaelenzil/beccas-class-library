@@ -1,0 +1,15 @@
+<%# in app/views/books/edit.html.erb%>
+
+<%= form_with model: @book, class: "book-form" do |f|%>
+  <p><%= action_name %> Book</p>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit action_name, class: "book-button" %>
+<% end %>

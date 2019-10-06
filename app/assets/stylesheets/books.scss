@@ -1,3 +1,40 @@
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: Helvetica;
+  background-color: lightblue
+}
+
+.book-form {
+  display: grid;
+  grid-template-columns: auto auto;
+  color: blue;
+  row-gap: 0.5em
+}
+
+.book-form label {
+  color: green;
+  grid-column: 1 / span 1;
+}
+
+.book-form input {
+  grid-column: 2 
+}
+
+input {
+  background-color: pink
+}
+
+header, footer, footer > a {
+  background-color: pink;
+}
+
+footer {
+  margin: 10px
+}
+
+.book-button {
+  background-color: white
+}

@@ -1,11 +1,6 @@
-<nav>
-<ul><li><%=link_to "Return to Book List", books_path %></li></ul>
-</nav>
-
-<h1>Title</h1>
-<p><%=@book.title%></p>
-<h2>Author</h2>
-<p><%=@book.author%></p>
-<h3>Description</h3>
-<p><%=@book.description %></p>
+<h1><%=@book.title%></h1>
+<ul>
+  <li><strong>By: </strong><%=@book.author%></li>
+  <li><strong>Description: </strong><%=@book.description %></li>
+</ul>
 

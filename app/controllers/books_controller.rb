@@ -11,9 +11,8 @@ class BooksController < ApplicationController
 
   def show
     book_id = params[:id]
-    puts "#{params}"
-
     @book = Book.find_by(id: book_id)
+    
     if @book.nil?
       head :not_found
       return
